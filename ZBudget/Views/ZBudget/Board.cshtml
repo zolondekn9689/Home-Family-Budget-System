@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<ZBudget.Models.ZBudget.Job>
+
+
+@foreach(var job in Model)
+{
+    <div class="card m-2" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">@job.Title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">$@job.Pay</h6>
+            <a class="card-text">Date Posted: @job.DatePosted</a>
+            <p class="card-text">@job.Description</p>
+            <a href="#" class="card-link">Accept Offer</a>
+        </div>
+    </div>
+}

@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Apps"] = "Home Page";
+}
+
+
+<h3>Apps availabel</h3>
+
+<!--  ZFamily Budget  -->
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">Family Budget</h5>
+        <p class="card-text">Allows the family to introduce kids to allocating their own balance. The kids will be 
+        be assigned a balance, which may be changed to the family needs.</p>
+        <a asp-controller="ZBudget" asp-action="Index" class="btn btn-primary">Go to App!</a>
+    </div>
+</div>
